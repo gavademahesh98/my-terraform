@@ -1,5 +1,5 @@
 variable "ami"{
-    default = ami-0532913178263be11
+    default = "ami-0532913178263be11"
 
 }
 
@@ -17,6 +17,6 @@ variable "instance_name"{
     default = "My-NGINX-Instance"
 }
 
-variable "user_data"{
-    default = file_base64("/root/my-terraform/day-1-userdata-output/user_data.sh")
+variable "file_path"{
+    default = "/root/my-terraform/day-1-userdata-output/user_data.sh"
 }

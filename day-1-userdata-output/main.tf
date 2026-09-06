@@ -2,7 +2,7 @@ resource  "aws_instance" "my_ec2"{
     ami = var.ami
     instance_type = var.instance_type
     key_name = var.key_name
-    user_data_base64 =var.user_data
+    user_data_base64 =file_base64(var.file_path)
     tags ={
         Name = var.instance_name
     }
