@@ -3,7 +3,7 @@ resource "aws_instance" "my-ec2" {
   instance_type = "t3.micro"
   key_name = "key-singapore"
   tags = {
-    name = "tf-instance"
+    Name = "tf-instance"
   }
 
 }
