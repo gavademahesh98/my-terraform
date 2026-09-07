@@ -16,7 +16,7 @@ variable "public_key_path"{
 }
 
 variable "user_data_file"{
-   default = "/root/terraform/day-2-instance-create/userdata.sh"
+   default = "/root/my-terraform/day-2-instance-create/userdata.sh"
 }
 
 variable "instance_name"{
