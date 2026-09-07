@@ -18,3 +18,7 @@ variable "instance_type"{
 variable "script_path"{
     default = "/root/my-terraform/day-2-create-instance/script.sh"
 }
+
+variable "instance_name"{
+    default = "Yogesh-Instance"
+}
