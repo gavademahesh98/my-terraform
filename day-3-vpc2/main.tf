@@ -142,7 +142,7 @@ resource "aws_instance" "private_instance"{
     vpc_security_group_ids= [aws_security_group.my_sg.id]
     user_data_base64 = filebase64("/root/my-terraform/day-3-vpc2/userdata.sh")
     tags = {
-        name = "private_instance"
+        Name = "private_instance"
     }
 
 }
