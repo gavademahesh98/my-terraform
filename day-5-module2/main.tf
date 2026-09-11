@@ -1,6 +1,6 @@
 module "vpc" {
     source = "./module/vpc"
-    vpc_cidr = "10.0.0../16"
+    vpc_cidr = "10.0.0.0./16"
     vpc_name= "dev-vpc"
     public_sub_cidr= "10.0.16.0/20"
     public_sub_az= "ap-southeast-1a"
