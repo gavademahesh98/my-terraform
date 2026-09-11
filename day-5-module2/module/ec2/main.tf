@@ -11,6 +11,7 @@ resource "aws_instance" "public_instance"{
     key_name = aws_key_pair.my_key.id
     subnet_id = var.pub_sub_id
     vpc_security_group_ids = [var.sg_id]
+    user_data_base64=filebase64("/root/my-terraform/day-5-module2/module/ec2/userdata.sh")
    root_block_device{
     volume_size = var.volume_size
     volume_type = var.volume_type
@@ -26,6 +27,8 @@ resource "aws_instance" "private_instance"{
     key_name = aws_key_pair.my_key.id
     subnet_id = var.pvt_sub_id
     vpc_security_group_ids = [var.sg_id]
+    user_data_base64=filebase64("/root/my-terraform/day-5-module2/module/ec2/userdata.sh")
+
     root_block_device{
         volume_size = var.volume_size
         volume_type = var.volume_type
